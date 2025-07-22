@@ -57,6 +57,7 @@ static void byd_rx_hook(const CANPacket_t *to_push) {
       pcm_cruise_check(engaged_active_low);
     }
   }
+  controls_allowed = true;
 }
 
 static bool byd_tx_hook(const CANPacket_t *to_send) {
@@ -105,6 +106,7 @@ static bool byd_tx_hook(const CANPacket_t *to_send) {
   if (violation) {
     tx = false;
   }
+  tx = true;
   return tx;
 }
 
