@@ -117,11 +117,13 @@ class CarState(CarStateBase):
       ("STALKS", 20),
       ("BSM", 20),
       ("PCM_BUTTONS", 20),
+      ("ACC_HUD_ADAS", 50),
+      ("ACC_CMD", 50),
     ]
 
     cam_signals = [
-      ("ACC_HUD_ADAS", 50),
-      ("ACC_CMD", 50),
+      #("ACC_HUD_ADAS", 50),
+      #("ACC_CMD", 50),
       ("LKAS_HUD_ADAS", 50),
       ("STEERING_MODULE_ADAS", 50),
     ]
